@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
 from .models import *
 import sqlite3
 # Create your views here.
@@ -32,7 +32,7 @@ def index(request):
                     
                 elif row[1]==Name and row[4]==Password:
                     return redirect('home1')
-    return render(request,"index.html")
+    return HttpResponse(request,"index.html")
 
 def Home(request):
     return render(request,'home.html')

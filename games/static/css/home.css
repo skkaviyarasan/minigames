@@ -1,0 +1,44 @@
+body{
+    background-image: url(" {% static 'images/canvas-bg.png' %}");
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.div_cards1{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+.card{
+    width: 2500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    inset:20px;
+    
+}
+.card img{
+    width:200px;
+}
+h5{
+    text-align: center;
+    padding: 10px;
+}
+.card a{
+    text-decoration: none;
+    
+}
